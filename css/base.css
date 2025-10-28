@@ -1,0 +1,62 @@
+/* ---------- Base Page ---------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4faf4;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  background: #157347; /* Deep green */
+  color: white;
+  padding: 1.2rem 0;
+}
+
+header h1 {
+  margin-bottom: 0.4rem;
+}
+
+main {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* ---------- Filters ---------- */
+#filters {
+  margin-bottom: 1.5rem;
+}
+
+button.filter-btn {
+  background: white;
+  border: 2px solid #157347;
+  border-radius: 5px;
+  color: #157347;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+button.filter-btn:hover {
+  background: #157347;
+  color: white;
+}
+
+button.filter-btn.active {
+  background: #157347;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  background: #e9f5ee;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #333;
+}

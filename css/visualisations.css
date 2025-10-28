@@ -1,0 +1,35 @@
+#chart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bars */
+.bar {
+  fill: #28a745; /* Green */
+  transition: fill 0.3s ease;
+}
+
+.bar:hover {
+  fill: #70c97a;
+}
+
+/* Axes */
+.axis path,
+.axis line {
+  stroke: #333;
+}
+
+/* Axis labels */
+.axis-label {
+  font-size: 12px;
+  fill: #222;
+  font-weight: bold;
+}

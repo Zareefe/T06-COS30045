@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T06-1: Interactive Histogram</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/visualisation.css" />
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Interactive Histogram: TV Energy Consumption</h1>
+    <p>Filter by screen technology to explore the distribution of energy consumption.</p>
+  </header>
+
+  <main>
+    <div id="filters"></div>
+    <div id="chart"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Muhd Zareefe | Built with D3.js</p>
+  </footer>
+
+  <!-- JS Order matters -->
+  <script src="js/load-data.js"></script>
+  <script src="js/shared-constants.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/histogram.js"></script>
+</body>
+</html>
