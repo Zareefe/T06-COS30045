@@ -29,7 +29,7 @@ svg {
 
 /* Axis labels */
 .axis-label {
-  font-size: 12px;
+  font-size: 8px;
   fill: #222;
   font-weight: bold;
 }
