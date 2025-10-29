@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>T06-1: Interactive Histogram</title>
+  <title>T06: Interactive Histogram and Scatterplot</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/base.css" />
@@ -18,19 +18,32 @@
     <p>Filter by screen technology to explore the distribution of energy consumption.</p>
   </header>
 
-  <main>
-    <div id="filters"></div>
-    <div id="chart"></div>
+  <main id="dashboard">
+    <div class="chart-card">
+      <h2>Interactive Histogram — TV Energy Consumption</h2>
+      <div id="filters"></div>
+      <!-- ID changed to #chart to match your CSS/JS -->
+      <div id="chart"></div>
+    </div>
+
+    <div class="chart-card">
+      <h2>Interactive Scatterplot — Energy Consumption vs Star Rating</h2>
+      <p>Hover over points to view screen type and energy consumption.</p>
+      <!-- ID changed to #scatter-plot to match the JS examples -->
+      <div id="scatter-plot"></div>
+    </div>
   </main>
 
   <footer>
     <p>© 2025 Muhd Zareefe | Built with D3.js</p>
   </footer>
 
-  <!-- JS Order matters -->
-  <script src="js/load-data.js"></script>
+  <!-- JS order matters: shared constants first, then chart modules, interactions, then loader -->
   <script src="js/shared-constants.js"></script>
-  <script src="js/interactions.js"></script>
   <script src="js/histogram.js"></script>
+  <script src="js/scatter.js"></script>
+  <script src="js/interactions.js"></script>
+  <!-- load-data LAST so it can call functions defined above -->
+  <script src="js/load-data.js"></script>
 </body>
 </html>

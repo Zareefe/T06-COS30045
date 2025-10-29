@@ -26,3 +26,22 @@ const filters_screen = [
   { id: "LED", label: "LED", isActive: false },
   { id: "OLED", label: "OLED", isActive: false }
 ];
+
+// --- scatter-specific shared constants (append to shared-constants.js) ---
+
+// scatter inner chart (will be created in scatterplot.js but referenced elsewhere)
+let innerChartS = null;
+
+// scatter scales (separate to avoid interfering with histogram scales)
+const xScaleS = d3.scaleLinear().range([0, width]);     // domain set in drawScatterplot
+const yScaleS = d3.scaleLinear().range([height, 0]);    // domain set in drawScatterplot
+
+// tooltip sizing
+const tooltipWidth = 140;
+const tooltipHeight = 48;
+const tooltipPadding = 8;
+
+// color scale for screenTech (categories)
+const colorScale = d3.scaleOrdinal()
+  .domain(["LCD", "LED", "OLED"]) // keep categories you expect; additional categories will auto-get colors
+  .range(["#2ca02c", "#1f77b4", "#d62728"]); // green / blue / red (adjust to your green theme if desired)

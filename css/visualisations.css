@@ -33,3 +33,13 @@ svg {
   fill: #222;
   font-weight: bold;
 }
+
+/* tooltip text inside scatter (styled by classes used above) */
+.scatter-tooltip text {
+  font-family: Arial, sans-serif;
+  pointer-events: none;
+}
+
+.scatter-tooltip rect {
+  fill: #ffffff; /* or a translucent green to match theme: rgba(20,115,60,0.95) */
+}
