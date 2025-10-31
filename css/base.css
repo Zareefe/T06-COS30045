@@ -51,6 +51,52 @@ button.filter-btn.active {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------- Chart Cards Layout ---------- */
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; /* space between histogram and scatterplot */
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 85%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.chart-card h2 {
+  color: #157347;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #d5ead7;
+  padding-bottom: 0.5rem;
+}
+
+.chart-card p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Chart Containers ---------- */
+#histogram,
+#scatterplot {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
